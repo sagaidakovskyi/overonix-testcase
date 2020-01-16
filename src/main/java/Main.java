@@ -15,9 +15,9 @@ public class Main {
 
     //curl -u "mykolasagaidakov1:QXqJtq6eaFns8N4AEhgy" -X POST "https://api-cloud.browserstack.com/app-automate/upload" -F "file=@./app-release.apk"
     //{"app_url":"bs://15124254e6ee751496bfa8ca8c5b60db27994ed8"}
-    public static String userName = "mykolasagaidakov1";
-    public static String accessKey = "QXqJtq6eaFns8N4AEhgy";
-    public static DesiredCapabilities caps;
+    private static String userName = "mykolasagaidakov1";
+    private static String accessKey = "QXqJtq6eaFns8N4AEhgy";
+    private static DesiredCapabilities caps;
     public static void main(String args[]) throws MalformedURLException, InterruptedException {
         caps = new DesiredCapabilities();
         AndroidDriver<AndroidElement> driver = setCapsToBrowserStack();
