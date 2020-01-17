@@ -23,7 +23,7 @@ public class Main {
         AndroidDriver<AndroidElement> driver = setCapsToBrowserStack();
         //AndroidDriver<AndroidElement> driver = setCapsToLocal();
 
-        driver.startActivity(new Activity("com.overonixtest", "MainActivity"));
+        driver.startActivity(new Activity("com.overonixtest", ".MainActivity"));
 
         testLogin(driver);
 
